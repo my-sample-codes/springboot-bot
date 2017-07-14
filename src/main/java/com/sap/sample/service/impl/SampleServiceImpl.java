@@ -26,9 +26,6 @@ import com.sap.sample.service.SampleService;
 public class SampleServiceImpl implements SampleService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SampleServiceImpl.class);
 
-	// @Autowired
-	// private Util util;
-
 	@Override
 	public Response checkConnection(String urlToCheck) {
 		try {

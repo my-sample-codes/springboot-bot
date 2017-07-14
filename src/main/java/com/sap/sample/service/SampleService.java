@@ -16,6 +16,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface SampleService {
 	@GET
-	@Produces(MediaType.TEXT_PLAIN)
+	@Produces(MediaType.TEXT_HTML)
 	Response checkConnection(@QueryParam("urlToCheck") String urlToCheck);
 }

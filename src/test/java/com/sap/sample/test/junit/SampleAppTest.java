@@ -1,4 +1,4 @@
-package com.sap.sample.test;
+package com.sap.sample.test.junit;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
