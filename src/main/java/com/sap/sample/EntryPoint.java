@@ -18,17 +18,25 @@ import org.springframework.context.annotation.Bean;
 import com.sap.sample.service.impl.SampleServiceImpl;
 
 /**
- * @author rmoha9
+ * The Class EntryPoint.
  *
+ * @author rmoha9
  */
 @SpringBootApplication(scanBasePackages = { "com.sap.sample" })
 public class EntryPoint {
 
+	/** The Constant LOGGER. */
 	private static final Logger LOGGER = LoggerFactory.getLogger(EntryPoint.class);
 
+	/** The bus. */
 	@Autowired
 	private Bus bus;
 
+	/**
+	 * Rs server.
+	 *
+	 * @return the server
+	 */
 	@Bean
 	public Server rsServer() {
 		JAXRSServerFactoryBean endpoint = new JAXRSServerFactoryBean();
@@ -38,6 +46,12 @@ public class EntryPoint {
 		return endpoint.create();
 	}
 
+	/**
+	 * The main method.
+	 *
+	 * @param args
+	 *            the arguments
+	 */
 	public static void main(String[] args) {
 		try {
 			LOGGER.info("Server starting at http://localhost:8080......");
