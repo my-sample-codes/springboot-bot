@@ -1,6 +1,6 @@
+
 # springboot-bot
 A sample application that integrates with third parties
-
 # Steps to Run
 This is a maven project build using `Spring Boot`. To execute the project follow the below steps:
 1.	Clone the repository in your file system
